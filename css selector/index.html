@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors
+    </title>
+    <style>
+        div {
+           /* background-color: red;*/
+        }
+        .red {
+            background-color: red;
+        }
+        #green {
+            background-color: green;
+        }
+        /* child selector */
+        .red > p {
+            background-color: yellow;
+            color: brown;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        a:active {
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="red"> this is a div
+        <p> i am a para inside div</p>
+    </div>
+    <a href="https://www.youtube.com">Visit YouTube</a>
+    <div id="green"> this is a anotherdiv</div>
+</body>
+</html>
